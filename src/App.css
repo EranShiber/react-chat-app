@@ -1,32 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Anton');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Anton', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*  HEADER  */
+
+.header {
+  align-content: center;
+  padding-top: 3%; 
+  text-transform: uppercase;
+  letter-spacing: 7.2px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 300%;
+  background-image: radial-gradient(circle, #5f83bb, #00a5da, #00c3c7, #00da85, #a8e31c);  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* MESSAGE BOARD */
+
+.message-board {
+  width: 70%;
+  height: 100vh;
+  background-color: #dcf8c6;
+}
+
+/* online=users */
+.online-users {
+  width: 30%;
+  height: 100vh;
+background-color: #ece5dd;
+}
+
+/* input */
+.input {
+  align-self: flex-end;
+}
+.input input{
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 50px;
+}
+
+/* CHAT ITEM */
+
+.chat-container .chat-message {
+margin-left: 5%;
+
+}
+
+.chat-container .chat-message {
+  background-color: #f5f5f5;
+  width: 40vw;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+  padding: 5px 10px;
 }
