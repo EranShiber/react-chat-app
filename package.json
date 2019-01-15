@@ -9,7 +9,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
-    "homepage": "http://eranshiber.github.io/react-chat-app"
+    "homepage": "https://eranshiber.github.io/react-chat-app/"
   },
   "scripts": {
     "start": "react-scripts start",
