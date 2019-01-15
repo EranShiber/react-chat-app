@@ -5,7 +5,7 @@ class MessageBoard extends React.Component {
     render() {
         return (
             <div className="message-board">
-               <Message message={this.props.message}/>
+               <Message message={this.props.message}  currectUser={this.props.currectUser}/>
             </div>
         )
     }

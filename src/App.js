@@ -21,7 +21,6 @@ class App extends Component {
       userId: "eranz",
       tokenProvider: new Chatkit.TokenProvider({
         url: tokenUrl
-        
       })   
     });
 
@@ -31,8 +30,7 @@ class App extends Component {
         currectUser.subscribeToRoom({
           roomId: 19385290,
           hooks: {
-            onNewMessage: message => {
-            
+            onNewMessage: message => {     
               this.setState({ messages: [...this.state.messages, message.text] })
             }
           }     
@@ -46,21 +44,19 @@ class App extends Component {
         text: this.state.userType,
         roomId: 19385290
       })
-    }
-    
+    }   
     hendleInputChange = (e) => {
       this.setState({userType: e.target.value})
       
     }
   
   
-  render() {
-    
+  render() {   
     return (
       <div>
         <Header />
         <div className="main-container">
-          <MessageBoard message={this.state.messages}/>
+          <MessageBoard message={this.state.messages} currectUser={this.currectUser}/>
           <OnlineUsers />
           <Input sendMessage={this.sendMessage} hendleInputChange={this.hendleInputChange}/>
         </div>
