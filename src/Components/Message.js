@@ -9,7 +9,7 @@ class Message extends React.Component {
                 {this.props.message.map(x=> {
                     return <div> 
                         <span><stron>User:</stron></span>
-                        <span className="main-date">At: {this.props.currectUser.createdAt}</span>
+                        <span className="main-date"><i> At:{this.props.currectUser.createdAt}</i></span>
                     <span className="chat-message">{x}</span>
                     </div>
                 })}

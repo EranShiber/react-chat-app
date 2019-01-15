@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Anton', sans-serif;
-  background-color:  #ece5dd;
+  background: linear-gradient(to right, #2c3e50, #4ca1af) ; 
 }
 
 
@@ -14,18 +14,14 @@ body {
 
 .header {
   text-align: center;
-  padding-top: 5%;
-  margin-bottom: 2%;
-  height: 20vh;
+
+  height: 13vh;
   text-transform: uppercase;
-  letter-spacing: 7.2px;
+  letter-spacing: 3.2px;
   justify-content: center;
   font-size: 300%;
-  background-image: radial-gradient(circle, #5f83bb, #00a5da, #00c3c7, #00da85, #a8e31c);  color: white;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 85%, 70% 100%, 30% 100%, 0 83%, 0 0);
-
+  color: white;
 }
-
 
 .main-container {
   display: flex;
@@ -38,7 +34,6 @@ body {
 .message-board {
   width: 80%;
   height: 100vh;
-  background-color: #ece5dd;
   overflow: scroll;
 }
 
@@ -46,8 +41,9 @@ body {
 .online-users {
   width: 20%;
   height: 100vh;
-  background-color: #bead98;
+  background-color: #4ca2af17;
   border-radius: 20px;
+
 }
 
 /* input */
@@ -58,8 +54,8 @@ body {
 .input input{
   position: fixed;
   bottom: 0;
-  left:29.5%;
-  width: 50vw;
+  left: 0;
+  width: 100vw;
   height: 50px;
   border-radius:5px;
   text-align: center;
@@ -72,17 +68,20 @@ body {
 margin-left: 5%;
 display: flex;
 flex-direction: column-reverse;
+color: white;
+
 }
 
 .chat-container .chat-message {
   display: inline-block;
-  background-color: #e5f6d7;
-  width: 20vw;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 47% 94%, 50% 75%, 0% 75%);
+  background-color: #3542b854;
+  color: white;
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 100px;
+ 
 }
 
 .main-date {
   display: flex;
+  font-size: 70%;
 }
